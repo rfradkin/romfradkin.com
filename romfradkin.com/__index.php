@@ -1,12 +1,12 @@
 <html>
 <script src="redir.js"></script>
 <head>
-<title>Test PHP Connection Script</title>
+<title>php mariadb test connec</title>
 </head>
 <body>
 
 
-<h3>Welcome to the PHP Connect Test</h3>
+<h3>Im working on the php database connection. If your reading this and not me, fuck off lol.</h3>
 <a href='./index1.html'>link text</a>
 
 <form action="welcome.php" method="post">

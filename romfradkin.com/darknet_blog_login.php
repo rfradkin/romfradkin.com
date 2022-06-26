@@ -1,53 +1,23 @@
+<?php
+    include('redir.php');
+    // include('darkn_only.php');
+?>
 <html>
+<head>
+<title>Dark Blog Login</title>
+</head>
 <body>
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
-# Information required for the database entry to be created
-$requi_infor = array("first_name", "last_name", "usern", "passw");
-
-$servername = "romfradkin.com";
-$username = "rfradkin";
-$password = "Lakeowego19!";
-$dbname = "darkn_blog_romfr";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT usern from user_infor";
-
-foreach($usern = $conn->query($sql) as $current_username){
-  echo $current_username;
-}
-
-// // Checks to make sure the inputs are filled
-// if (count($_POST) == 4){
-//   foreach($_POST as $input){
-//     if (empty($input)){
-//       $conn->close();
-//       header("Location: darknet_blog_new_user.php"); 
-//       die();
-//     }
-//   }
-// }
-
-// $first_name = $_POST["first_name"];
-// $last_name = $_POST["last_name"];
-// $usern = $_POST["usern"];
-// $passw = $_POST["passw"];
-
-// $hashe_passw = password_hash($passw, PASSWORD_DEFAULT);
-
-// $sql = "INSERT INTO user_infor (id, first_name, last_name, usern, passw)
-// VALUES ($user_infor_rows + 1, '$first_name', '$last_name', '$usern', '$hashe_passw')";
-// $conn->query($sql);
-
-$conn->close();
-
-// header("Location: index.php"); 
+    session_start();
+    if ($_SESSION['login_faile']){
+        echo '<p> Username or password Incorrect. Try again.</p>';
+    }
 ?>
+<form action='darknet_blog_verify_user.php' method='post'>
+Username: <input type='text' name='usern' required><br>
+Password: <input type='password' name='passw' required><br>
+<input type='submit'>
+<p>Forgot your password? Well, I told you not to. Go create another account. If you really care, I'll manually reset it (but like just don't forget). </p>
+</form>
+</body>
+</html>

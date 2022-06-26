@@ -26,7 +26,7 @@ Username: <input type='text' name='usern' required><br>
 Password: <input type='text' name='passw' required><br>
 <input type='submit'>
 </form>
-<p>** Also, I don't store your password as plain text, I hash it (cause I have half a brain cell). If you don't know what that means, essentially no one will ever see your password so don't worry.<br></p>
+<p>** Also, I don't store your password as plain text, I salt and hash it (cause I have half a brain cell). If you don't know what that means, essentially no one will ever see your password so don't worry.<br></p>
 <p>** That also means I can't recover your password, so don't forget it cause I'm not implementing an email system to reset it. Too much effort</p>
 </body>
 </html>

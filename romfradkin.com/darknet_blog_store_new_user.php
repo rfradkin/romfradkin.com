@@ -9,7 +9,18 @@ $requi_infor = array("first_name", "last_name", "usern", "passw");
 
 $servername = "romfradkin.com";
 $username = "rfradkin";
-$password = "Lakeowego19!";
+
+// Recieve the password from a file so not shown on Github... (pls don't look at the version history)
+$file = fopen('/var/www/romfradkin.com/sensi_infor.txt','r');
+while ($line = fgets($file)) {
+  if (substr($line, 0, 8) == 'mariadb:'){
+    $password = substr($line, 8);
+    break;
+  }
+  die('Password not found.');
+}
+fclose($file);
+
 $dbname = "darkn_blog_romfr";
 
 // Create connection
@@ -57,6 +68,11 @@ VALUES ($user_infor_rows + 1, '$first_name', '$last_name', '$usern', '$hashe_pas
 $conn->query($sql);
 
 $conn->close();
+
+# Store the username as a session variable to keep the user logged in
+# I don't use cookies cause TOR browser deletes them after each session, 
+# so the effect would be the same
+$_SESSION['usern'] = $usern;
 
 header("Location: index.php"); 
 ?>

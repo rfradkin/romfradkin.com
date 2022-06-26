@@ -4,12 +4,22 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-# Information required for the database entry to be created
-$requi_infor = array("first_name", "last_name", "usern", "passw");
+session_start();
 
 $servername = "romfradkin.com";
 $username = "rfradkin";
-$password = "Lakeowego19!";
+
+// Recieve the password from a file so not shown on Github... (pls don't look at the version history)
+$file = fopen('/var/www/romfradkin.com/sensi_infor.txt','r');
+while ($line = fgets($file)) {
+  if (substr($line, 0, 8) == 'mariadb:'){
+    $password = substr($line, 8);
+    break;
+  }
+  die('Password not found.');
+}
+fclose($file);
+
 $dbname = "darkn_blog_romfr";
 
 // Create connection
@@ -19,35 +29,22 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT usern from user_infor";
+$sql = "SELECT usern, passw from user_infor";
 
-foreach($usern = $conn->query($sql) as $current_username){
-  echo $current_username['usern'];
+foreach($conn->query($sql) as $curre_infor){
+  if ($curre_infor['usern'] == $_POST["usern"]){
+    if (password_verify($_POST['passw'], $curre_infor['passw'])){
+      echo '<p>good</p>';
+      $_SESSION['usern'] = $_POST["usern"];
+      $_SESSION['login_faile'] = False;
+      header("Location: darknet_blog.php"); 
+      die();
+    }
+  }
 }
-
-// // Checks to make sure the inputs are filled
-// if (count($_POST) == 4){
-//   foreach($_POST as $input){
-//     if (empty($input)){
-//       $conn->close();
-//       header("Location: darknet_blog_new_user.php"); 
-//       die();
-//     }
-//   }
-// }
-
-// $first_name = $_POST["first_name"];
-// $last_name = $_POST["last_name"];
-// $usern = $_POST["usern"];
-// $passw = $_POST["passw"];
-
-// $hashe_passw = password_hash($passw, PASSWORD_DEFAULT);
-
-// $sql = "INSERT INTO user_infor (id, first_name, last_name, usern, passw)
-// VALUES ($user_infor_rows + 1, '$first_name', '$last_name', '$usern', '$hashe_passw')";
-// $conn->query($sql);
+$_SESSION['login_faile'] = True;
 
 $conn->close();
 
-// header("Location: index.php"); 
+header("Location: darknet_blog_login.php"); 
 ?>

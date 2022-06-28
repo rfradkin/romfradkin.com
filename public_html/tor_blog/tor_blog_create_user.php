@@ -20,8 +20,7 @@
             $_SESSION['username_used'] = False;
         ?>
         <form action='./tor_blog_store_user.php' method='post'>
-            First Name: <input type='text' name='first_name' required><br>
-            Last Name: <input type='text' name='last_name' required><br>
+            Name: <input type='text' name='name' required><br>
             Username: <input type='text' name='username' required><br>
             Passphrase (you can still use a password, but a passpharse is more safe (and should be implemented everywhere imo...)): <input type='text' name='passphrase' required><br>
             <input type='submit'>

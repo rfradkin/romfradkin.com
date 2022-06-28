@@ -16,6 +16,14 @@
             foreach(glob('./tor_blog/*.*') as $file) {
                 echo "<a href='$file'>$file</a><br>";
             }
+            echo '<br>public_html/notes_for_rom<br>';
+            foreach(glob('./notes_for_rom/*.*') as $file) {
+                echo "<a href='$file'>$file</a><br>";
+            }
+            echo '<br>public_html/about<br>';
+            foreach(glob('./about/*.*') as $file) {
+                echo "<a href='$file'>$file</a><br>";
+            }
             ?>
         <p>This is the current home page for romfradkin.com. Right now, its just links to other pages I'm working on. It'll get better, I swear...</p>
     </body>

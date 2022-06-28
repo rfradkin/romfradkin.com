@@ -49,8 +49,7 @@
     }
 
     // Block sql injection attack
-    $first_name = $database->real_escape_string($_POST["first_name"]);
-    $last_name = $database->real_escape_string($_POST["last_name"]);
+    $name = $database->real_escape_string($_POST["name"]);
     $username = $database->real_escape_string(strtolower($_POST["username"]));
     $passphrase = $database->real_escape_string($_POST["passphrase"]);
 
@@ -66,8 +65,8 @@
         }
     }
 
-    $sql = "INSERT INTO user_information (id, first_name, last_name, username, passphrase)
-    VALUES ($number_of_users + 1, '$first_name', '$last_name', '$username', '$hashed_passphrase')";
+    $sql = "INSERT INTO user_information (id, name, username, passphrase)
+    VALUES ($number_of_users + 1, '$name', '$username', '$hashed_passphrase')";
     $database->query($sql);
 
     $database->close();

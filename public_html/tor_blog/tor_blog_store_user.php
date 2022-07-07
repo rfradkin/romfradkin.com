@@ -35,7 +35,7 @@
     }
 
     // Checks to make sure the inputs are filled
-    if (count($_POST) == 4) {
+    if (count($_POST) == 3) {
         foreach($_POST as $input) {
             if (empty($input)) {
             $database->close();       
@@ -76,5 +76,5 @@
     # so the effect would be the same
     $_SESSION["username"] = $username;
 
-    header("Location: ../index.php"); 
+    header("Location: ./tor_blog.php"); 
 ?>

@@ -1,0 +1,16 @@
+footer {
+    position: relative;
+    top: 5rem;
+    height: 5rem;
+    background-color: #2a2829;
+    width: 100%;
+}
+
+#footer_text {
+    position: relative;
+    color: white;
+    top: 1.8rem;
+    vertical-align: middle;
+    left: 5.2%;
+    width: 15rem;;
+}

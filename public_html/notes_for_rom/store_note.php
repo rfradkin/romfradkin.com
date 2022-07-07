@@ -47,5 +47,8 @@
 
     $database->close();
 
+    // Set Cookie for remembering name
+    setcookie("notes_for_rom_name", "$name", time() + (86400 * 365), "/"); // 86400 = 1 day
+
     header("Location: ./thanks_for_the_note.php"); 
 ?>

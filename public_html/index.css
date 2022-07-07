@@ -1,0 +1,212 @@
+body {
+    background-color: #576ad2;
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    margin: 0rem;
+    font-family: futuralight, times;
+}
+
+#main_content {
+    position: relative;
+    top: 6rem;
+    height: 48rem;
+    margin: 0rem 5.2%;
+}  
+
+#main_image {
+    width: 26rem;
+    float:left;
+}
+
+#main_title {
+    font-family: futuralight, times;
+    font-size: 3rem;
+    float: right;
+}
+
+#main_line {
+    height: 0.063rem; 
+    width: 30rem;
+    background-color: #000000;
+    vertical-align: middle;
+    margin-left:2.5rem;
+    display: inline-block;
+}
+
+#main_text {
+    font-family: futuralight, times;
+    font-size: 2rem;
+    color:#000000;
+    width: 39.75rem;
+    float:right;
+}
+
+/* Header */
+
+header {
+    display: inline-block;
+    width: 100%;
+    /* background-color: red; */
+}
+
+header a {
+    position: relative;
+    left: 2%;
+    float: left;
+    text-align: center;
+    margin: 1rem 1.6rem;
+    text-decoration: none;
+    font-family: futuralight, times;
+    font-size:1.8rem;
+    color: #FFFFFF;
+}
+
+header a:before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 0.125rem;
+    top: 2.22rem;
+    left: 7.5%;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+header a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#active_link:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* image and bio */
+#image_bio {
+    height: 35rem;
+}
+#main_image {
+    float: left;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_text {
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #000000;
+    height: 6rem;
+    font-size: 5rem;
+    padding: 0rem 0.5rem;
+    left: 4%;
+}
+
+#hello_im {
+    top: 20.6rem;
+}
+
+#rom_fradkin_image_text {
+    top: 26rem;
+    font-family: playfair_displayregular, times;
+}
+
+#bio {
+    width: 100%;
+    height: 100%;
+}
+
+#circle_image {
+    /* position: relative; */
+    padding-top: 2.8rem;
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+}
+
+.bio_text {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#rom_fradkin_bio {
+    font-size: 2rem;
+    margin-top: 1.1rem;
+    font-family: playfair_displayregular, times;
+}
+
+#mit_bio {
+    font-size: 1.2rem;
+    margin-top: 1.4rem;
+}
+
+#major_bio {
+    font-size: 1.2rem;
+}
+
+#email_bio {
+    font-size: 1.2rem;
+    margin-top: 1.4rem;
+}
+
+#phone_bio {
+    font-size: 1.2rem;
+}
+
+#social_links {
+    text-align: center;
+}
+
+.fa {
+    margin: 2.2rem 0.6rem;
+    font-size: 30px!important;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  color: #FFFFFF;
+}
+
+.fa-linkedin {
+  color: #FFFFFF;
+}
+
+.fa-github {
+  color: #FFFFFF;
+}
+
+
+/* stuff */
+
+#idkwhatthisis {
+    height: 20rem;
+    background-color: #eef0fb;
+}
+
+/* footer */
+
+footer {
+    height: 5rem;
+    background-color: #2a2829;
+    width: 100%;
+}
+
+#footer_text {
+    position: relative;
+    color: white;
+    top: 1.8rem;
+    vertical-align: middle;
+    left: 5.2%;
+    width: 15rem;;
+}

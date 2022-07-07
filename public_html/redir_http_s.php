@@ -14,5 +14,8 @@
     if ($http_host == 'romfradkin.com' || $http_host == 'www.romfradkin.com')
         if ($http_s == 'http')
             // Redirects to https version of same page
-            header("Location: https://$http_host$reque_uri"); 
+            header("Location: https://www.romfradkin.com$reque_uri"); 
+        else if ($http_host == 'romfradkin.com') 
+            // Include the subdomain
+            header("Location: https://www.romfradkin.com$reque_uri"); 
 ?>

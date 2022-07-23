@@ -5,7 +5,9 @@
 <html lang="en-US">
     <head>
         <title>Rom Fradkin</title>
-        <link rel="stylesheet" href="/index.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/index_desktop.css">
+        <link rel="stylesheet" href="/index_mobile.css">
         <link rel="stylesheet" href="/fonts/fonts.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -20,7 +22,17 @@
         <div id="image_bio">
             <p class="image_text" id="hello_im">Hello, I'm</p>
             <p class="image_text" id="rom_fradkin_image_text">Rom Fradkin</p>
-            <img id="main_image" src="/images/tess_first_light.jpg" alt="TESS First Light">
+
+            <!-- Select a random image using PHP for display -->
+            <?php
+                $files = glob("/var/www/romfradkin.com/public_html/astro_images/*");
+                $file_number = array_rand($files);
+                // Split the string, then only take the last part of the array (which is the filename)
+                $file_path = explode("/", $files[$file_number]);
+                $file_name = end($file_path);
+                echo "<img id='main_image' src='/astro_images/$file_name' alt='Astrophysics Image'>"
+            ?>
+
             <div id="bio">
                 <img id="circle_image" src="/images/circle_image.png" alt="Circle Headshot">
                 <p class="bio_text" id="rom_fradkin_bio">Rom Fradkin</p>
@@ -36,11 +48,14 @@
                 </div>
             </div>
         </div>
-        <div id="idkwhatthisis">
-            <p >Welcome to my website</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim consectetur voluptas 
-                inventore delectus dolores, eaque eum pariatur laborum debitis omnis quas vero necessitatibus 
-                nesciunt quam labore! Repellendus a perspiciatis quibusdam!</p>
+
+        <div id="welcome">
+            <p id="welcome_title">Welcome to my website</p>
+            <p id="welcome_content">
+                Come buy some Rom Fradkin merch:
+                <a target="_blank" rel="noopener noreferrer" href="https://www.redbubble.com/people/rfradkin/shop?asc=u">merch link</a>
+                (this is a joke but please buy something. it would make me laugh (and no, I don't get a commission)).
+            </p>
         </div>
 
         <footer>
@@ -48,5 +63,5 @@
         </footer>
 
     </body>
-
+    
 </html>

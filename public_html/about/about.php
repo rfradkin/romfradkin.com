@@ -1,5 +1,5 @@
 <?php
-    include("../redir_http_s.php");
+    include(getenv("romfradkin_com_root")."/public_html/redir_http_s.php");
 ?>
 <!DOCTYPE html>
 <html>

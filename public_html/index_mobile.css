@@ -1,0 +1,122 @@
+body {
+    background-color: #576ad2;
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    margin: 0rem;
+    font-family: futuralight, times;
+}
+
+    /* footer */
+
+footer {
+    height: 5rem;
+    background-color: #2a2829;
+    width: 100%;
+}
+
+#footer_text {
+    position: relative;
+    color: white;
+    top: 1.8rem;
+    vertical-align: middle;
+    left: 4%;
+    width: 15rem;;
+}
+
+@media only screen and (min-width: 460px) and (max-width: 660px) {
+
+    /* Header */
+
+    header {
+        width: 100%;
+        height: 4rem;
+    }
+
+    #main_image {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .image_text {
+        position: absolute;
+        color: #FFFFFF;
+        background-color: #000000;
+        height: 5rem;
+        font-size: 3.8rem;
+        padding: 0rem 0.5rem;
+    
+    }
+
+    #hello_im {
+        top: 19.6rem;
+        left: 30%;
+        right: 30%;
+    }
+
+    #rom_fradkin_image_text {
+        top: 24rem;
+        font-family: playfair_displayregular, times;
+    }
+
+    #bio {
+        display: none;
+    }
+
+    #circle_image {
+        display: none;
+    }
+
+    .bio_text {
+        display: none;
+    }
+
+    #rom_fradkin_bio {
+        display: none;
+    }
+
+    #mit_bio {
+        display: none;
+    }
+
+    #major_bio {
+        display: none;
+    }
+
+    #email_bio {
+        display: none;
+    }
+
+    #phone_bio {
+        display: none;
+    }
+
+    #social_links {
+        display: none;
+    }
+
+    .fa {
+        display: none;
+    }
+
+    .fa:hover {
+        display: none;
+    }
+
+    /* welcome */
+
+    #welcome {
+        display: none;
+    }
+
+    #welcome_title {
+        display: none;
+    }
+
+    #welcome_content {
+        display: none;
+    }
+}

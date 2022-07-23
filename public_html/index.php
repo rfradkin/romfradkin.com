@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Rom Fradkin</title>
+        <title>Rom Fradkn</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="/index_desktop.css">
         <link rel="stylesheet" href="/index_mobile.css">

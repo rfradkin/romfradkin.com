@@ -1,8 +1,8 @@
-body {
+/* body {
     background-color: #576ad2;
     margin:0px;
     padding:0px;
-}
+} */
 
 p {
     margin: 0rem;
@@ -26,7 +26,11 @@ footer {
     width: 15rem;;
 }
 
-@media only screen and (min-width: 460px) and (max-width: 660px) {
+@media only screen and (min-width: 60px) and (max-width: 660px) {
+
+    #desktop_navigation {
+        display: none;
+    }
 
     /* Header */
 
@@ -34,7 +38,9 @@ footer {
         width: 100%;
         height: 4rem;
     }
-
+    /* #image_bio {
+        height: 100%;
+    } */
     #main_image {
         width: 100%;
         height: 25rem;
@@ -42,81 +48,202 @@ footer {
     }
 
     .image_text {
-        position: absolute;
+        position: relative;
         color: #FFFFFF;
-        background-color: #000000;
-        height: 5rem;
-        font-size: 3.8rem;
+        height: 4rem;
+        font-size: 3rem;
         padding: 0rem 0.5rem;
-    
+        background-color: #000000;
+        /* Centers the text */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Stops wrapping */
+        white-space: nowrap;
     }
 
     #hello_im {
-        top: 19.6rem;
-        left: 30%;
-        right: 30%;
+        position: absolute;
+        top: 20rem;
     }
 
     #rom_fradkin_image_text {
+        position: absolute;
         top: 24rem;
         font-family: playfair_displayregular, times;
     }
 
-    #bio {
-        display: none;
-    }
+    /* #bio {
+        height: 10rem;
+    } */
 
     #circle_image {
-        display: none;
+        float: left;
+        width: 8rem;
+        margin: 2.5rem 3rem;
+        margin-right: 0.4rem;
     }
 
     .bio_text {
-        display: none;
-    }
-
-    #rom_fradkin_bio {
-        display: none;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
     }
 
     #mit_bio {
-        display: none;
+        font-size: 1.2rem;
+        padding-top: 1rem;
     }
 
     #major_bio {
-        display: none;
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
     }
 
     #email_bio {
-        display: none;
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
     }
 
     #phone_bio {
-        display: none;
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
     }
 
     #social_links {
-        display: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
     }
-
     .fa {
-        display: none;
+        margin: 1.4rem 0.6rem;
+        font-size: 25px!important;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
     }
 
     .fa:hover {
-        display: none;
-    }
+        opacity: 0.7;
+    } 
 
     /* welcome */
 
     #welcome {
-        display: none;
+        width: 100%;
+        background-color: #eef0fb;
     }
 
     #welcome_title {
-        display: none;
+        font-family: futuralight, times;
+        margin-left: 4%;
+        padding-top: 2rem;
+        font-size: 2rem;
     }
 
     #welcome_content {
-        display: none;
+        font-family: futuralight, times;
+        margin: 0rem 4%;
+        padding: 1rem 0 3.4rem;
+        font-size: 1.2rem;
     }
+}
+
+/* @media only screen and (min-width: 414px) and (max-width: 501px) {
+    #circle_image {
+        float: left;
+        width: 8rem;
+        margin: 3.2rem 2rem;
+        margin-right: 0.4rem;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 414px) {
+    #circle_image {
+        float: left;
+        width: 10rem;
+        margin: 3.2rem 2rem;
+        margin-right: 0.4rem;
+    }
+} */
+#rom_fradkin_home_link {
+    color: white;
+    font-size: 1.9rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    transform: translate(0%, -50%);
+}
+
+#three_bars {
+    color: white;
+    cursor: pointer;
+    font-size: 2.6rem;
+    position: absolute;
+    top: 1.9rem;
+    right: 1rem;
+    transform: translate(0%, -50%);
+}
+
+#cross {
+    color: white;
+    cursor: pointer;
+    font-size: 5rem;
+    position: absolute;
+    right: 8%;
+    top: 2%;
+       
+}
+
+#mobile_overlay {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #576ad2;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#mobile_links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.9rem;
+    width: 80%;
+    text-align: center;
+    font-family: futuralight, times;
+    white-space: nowrap;
+}
+
+#mobile_home {
+    /* color: white; */
+    display: block;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+#mobile_about {
+    display: block;
+    margin: 0.2rem;
+}
+
+#mobile_notes_for_rom {
+    display: block;
+    margin: 0.2rem;
+}
+
+#mobile_tor_blog {
+    display: block;
+    margin: 0.2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
 }

@@ -1,0 +1,4 @@
+The Known Problems (that I probably won't fix)
+
+1) If you are using a really tall monitor, you can see beyond the header...
+2) Circle image and bio text on image page in mobile version (when side by side) are not done correctly... Using media tags for control instead.

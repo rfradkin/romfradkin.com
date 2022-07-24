@@ -1,88 +1,51 @@
-html {
-    background-color: #2a2829;
+/* Desktop Index Standards */
+/* i.e.used throughout every desktop page size */
+@media only screen and (min-width: 660px) {
+
+    html {
+        background-color: #2a2829;
+    }
+
+    body {
+        background-color: #576ad2;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+
+    p {
+        margin: 0rem;
+        font-family: futuralight, times;
+    }
+
+    .bio_text {
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    #social_links {
+        text-align: center;
+    }
+
+    #welcome {
+        width: 100%;
+        background-color: #eef0fb;
+    }
 }
-
-body {
-    background-color: #576ad2;
-    margin:0px;
-    padding:0px;
-    height: 100%;
-}
-
-p {
-    margin: 0rem;
-    font-family: futuralight, times;
-}
-
-    /* footer */
-
-/* footer {
-    height: 5rem;
-    background-color: #2a2829;
-    width: 100%;
-}
-
-#footer_text {
-    position: relative;
-    color: white;
-    top: 1.8rem;
-    vertical-align: middle;
-    left: 4%;
-    width: 15rem;;
-} */
 
 @media only screen and (min-width: 1000px) {
 
-    /* header */
-    /* #mobile_navigation { 
-        display: none;
-    }
+    /* Main Image and Bio */
 
-    header {
-        display: inline-block;
-        width: 100%;
-    }
-
-    header a {
-        position: relative;
-        left: 2%;
-        float: left;
-        text-align: center;
-        margin: 1rem 1.6rem;
-        text-decoration: none;
-        font-family: futuralight, times;
-        font-size:1.8rem;
-        color: #FFFFFF;
-    }
-
-    header a:before {
-        content: "";
-        position: absolute;
-        width: 85%;
-        height: 0.125rem;
-        top: 2.22rem;
-        left: 7.5%;
-        background-color: white;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
-    }
-
-    header a:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
-    }
-
-    #active_link:before {
-        visibility: visible;
-        transform: scaleX(1);
-    } */
-
-    /* image and bio */
     #image_bio {
         height: 35rem;
         width: 100%;
     }
+    
     #main_image {
         float: left;
         width: 75%;
@@ -116,16 +79,10 @@ p {
     }
 
     #circle_image {
-        /* position: relative; */
         padding-top: 3.8rem;
         display: block;
         margin: 0 auto;
         width: 10rem;
-    }
-
-    .bio_text {
-        color: #FFFFFF;
-        text-align: center;
     }
 
     #mit_bio {
@@ -147,27 +104,12 @@ p {
         margin-top: 0.4rem;
     }
 
-    #social_links {
-        text-align: center;
-    }
-
     .fa {
         margin: 2.2rem 0.6rem;
         font-size: 30px!important;
         text-align: center;
         text-decoration: none;
         color: #FFFFFF;
-    }
-
-    .fa:hover {
-    opacity: 0.7;
-    }
-
-    /* welcome */
-
-    #welcome {
-        width: 100%;
-        background-color: #eef0fb;
     }
 
     #welcome_title {
@@ -187,53 +129,8 @@ p {
 
 @media only screen and (min-width: 660px) and (max-width: 1000px) {
 
-    /* Header */
+    /* Main Image and Bio */
 
-    /* #mobile_navigation {
-        display: none;
-    }
-    
-    header {
-        display: inline-block;
-        width: 100%;
-    }
-
-    header a {
-        position: relative;
-        left: 2%;
-        float: left;
-        text-align: center;
-        margin: 1rem 1.6rem;
-        text-decoration: none;
-        font-family: futuralight, times;
-        font-size:1.8rem;
-        color: #FFFFFF;
-    }
-
-    header a:before {
-        content: "";
-        position: absolute;
-        width: 85%;
-        height: 0.125rem;
-        top: 2.22rem;
-        left: 7.5%;
-        background-color: white;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
-    }
-
-    header a:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
-    }
-
-    #active_link:before {
-        visibility: visible;
-        transform: scaleX(1);
-    } */
-
-    /* image and bio */
     #image_bio {
         height: 30rem;
         width: 100%;
@@ -271,16 +168,10 @@ p {
     }
 
     #circle_image {
-        /* position: relative; */
         padding-top: 4rem;
         display: block;
         margin: 0 auto;
         width: 9rem;
-    }
-
-    .bio_text {
-        color: #FFFFFF;
-        text-align: center;
     }
 
     #mit_bio {
@@ -302,10 +193,6 @@ p {
         margin-top: 0.4rem;
     }
 
-    #social_links {
-        text-align: center;
-    }
-
     .fa {
         margin: 2.2rem 0.6rem;
         font-size: 25px!important;
@@ -314,16 +201,7 @@ p {
         color: #FFFFFF;
     }
 
-    .fa:hover {
-    opacity: 0.7;
-    }
-
-    /* welcome */
-
-    #welcome {
-        width: 100%;
-        background-color: #eef0fb;
-    }
+    /* Welcome */
 
     #welcome_title {
         font-family: futuralight, times;
@@ -342,49 +220,8 @@ p {
 
 @media only screen and (min-height: 950px) {
 
-    /* Header */
+    /* Main Image and Bio */
 
-    /* header {
-        display: inline-block;
-        width: 100%;
-    }
-
-    header a {
-        position: relative;
-        left: 2%;
-        float: left;
-        text-align: center;
-        margin: 1rem 1.6rem;
-        text-decoration: none;
-        font-family: futuralight, times;
-        font-size:1.8rem;
-        color: #FFFFFF;
-    }
-
-    header a:before {
-        content: "";
-        position: absolute;
-        width: 85%;
-        height: 0.125rem;
-        top: 2.22rem;
-        left: 7.5%;
-        background-color: white;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
-    }
-
-    header a:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
-    }
-
-    #active_link:before {
-        visibility: visible;
-        transform: scaleX(1);
-    } */
-
-    /* image and bio */
     #image_bio {
         height: 43rem;
         width: 100%;
@@ -422,16 +259,10 @@ p {
     }
 
     #circle_image {
-        /* position: relative; */
         padding-top: 7.8rem;
         display: block;
         margin: 0 auto;
         width: 12rem;
-    }
-
-    .bio_text {
-        color: #FFFFFF;
-        text-align: center;
     }
 
     #mit_bio {
@@ -453,10 +284,6 @@ p {
         margin-top: 0.4rem;
     }
 
-    #social_links {
-        text-align: center;
-    }
-
     .fa {
         margin: 2.2rem 0.6rem;
         font-size: 30px!important;
@@ -465,16 +292,7 @@ p {
         color: #FFFFFF;
     }
 
-    .fa:hover {
-    opacity: 0.7;
-    }
-
-    /* welcome */
-
-    #welcome {
-        width: 100%;
-        background-color: #eef0fb;
-    }
+    /* Welcome */
 
     #welcome_title {
         font-family: futuralight, times;

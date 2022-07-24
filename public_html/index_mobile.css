@@ -1,45 +1,37 @@
-/* body {
-    background-color: #576ad2;
-    margin:0px;
-    padding:0px;
-} */
+/* Mobile Index Standards */
+/* i.e.used throughout every mobile page size */
+@media only screen and (max-width: 660px) {
 
-p {
-    margin: 0rem;
-    font-family: futuralight, times;
-}
-
-    /* footer */
-
-/* footer {
-    height: 5rem;
-    background-color: #2a2829;
-    width: 100%;
-}
-
-#footer_text {
-    position: relative;
-    color: white;
-    top: 1.8rem;
-    vertical-align: middle;
-    left: 4%;
-    width: 15rem;;
-} */
-
-@media only screen and (min-width: 60px) and (max-width: 660px) {
-
-    /* #desktop_navigation {
-        display: none;
+    html {
+        background-color: #2a2829;
     }
 
-    header {
+    body {
+        background-color: #576ad2;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+
+    p {
+        margin: 0rem;
+        font-family: futuralight, times;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    #welcome {
         width: 100%;
-        height: 4rem;
-    } */
+        background-color: #eef0fb;
+    }
+
+    /* Main Image */
 
     #main_image {
         width: 100%;
-        height: 25rem;
+        height: 22rem;
         object-fit: cover;
     }
 
@@ -50,27 +42,26 @@ p {
         font-size: 3rem;
         padding: 0rem 0.5rem;
         background-color: #000000;
-        /* Centers the text */
         left: 50%;
         transform: translate(-50%, -50%);
-        /* Stops wrapping */
         white-space: nowrap;
     }
 
     #hello_im {
         position: absolute;
-        top: 20rem;
+        top: 18rem;
     }
 
     #rom_fradkin_image_text {
         position: absolute;
-        top: 24rem;
+        top: 22rem;
         font-family: playfair_displayregular, times;
     }
+}
 
-    /* #bio {
-        height: 10rem;
-    } */
+@media only screen and (min-width: 510px) and (max-width: 660px) {
+
+    /* Bio */
 
     #circle_image {
         float: left;
@@ -113,6 +104,7 @@ p {
         text-align: center;
         margin-right: 2rem;
     }
+
     .fa {
         margin: 1.4rem 0.6rem;
         font-size: 25px!important;
@@ -121,16 +113,7 @@ p {
         color: #FFFFFF;
     }
 
-    .fa:hover {
-        opacity: 0.7;
-    } 
-
-    /* welcome */
-
-    #welcome {
-        width: 100%;
-        background-color: #eef0fb;
-    }
+    /* Welcome */
 
     #welcome_title {
         font-family: futuralight, times;
@@ -147,98 +130,357 @@ p {
     }
 }
 
-/* @media only screen and (min-width: 414px) and (max-width: 501px) {
+@media only screen and (min-width: 460px) and (max-width: 510px) {
+
+    /* Bio */
+
+    #circle_image {
+        float: left;
+        width: 9rem;
+        margin: 2.8rem 3rem;
+        margin-right: 0.4rem;
+    }
+
+    .bio_text {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    #mit_bio {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    #major_bio {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
+
+    #email_bio {
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
+
+    #phone_bio {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
+
+    #social_links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    .fa {
+        margin: 1.4rem 0.6rem;
+        font-size: 25px!important;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Welcome */
+
+    #welcome_title {
+        font-family: futuralight, times;
+        margin-left: 4%;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+
+    #welcome_content {
+        font-family: futuralight, times;
+        margin: 0rem 4%;
+        padding: 1rem 0 3.4rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 460px) {
+
+    /* Bio */
+
     #circle_image {
         float: left;
         width: 8rem;
-        margin: 3.2rem 2rem;
+        margin: 3.3rem 2rem;
         margin-right: 0.4rem;
+    }
+
+    .bio_text {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    #mit_bio {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    #major_bio {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
+
+    #email_bio {
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
+
+    #phone_bio {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
+
+    #social_links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    .fa {
+        margin: 1.4rem 0.6rem;
+        font-size: 25px!important;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Welcome */
+
+    #welcome_title {
+        font-family: futuralight, times;
+        margin-left: 4%;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+
+    #welcome_content {
+        font-family: futuralight, times;
+        margin: 0rem 4%;
+        padding: 1rem 0 3.4rem;
+        font-size: 1.2rem;
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 414px) {
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+
+    /* Bio */
+
     #circle_image {
         float: left;
-        width: 10rem;
-        margin: 3.2rem 2rem;
+        width: 8rem;
+        margin: 2.5rem 2rem;
         margin-right: 0.4rem;
     }
-} */
-/* #rom_fradkin_home_link {
-    color: white;
-    font-size: 1.9rem;
-    position: absolute;
-    top: 2rem;
-    left: 1rem;
-    transform: translate(0%, -50%);
+
+    .bio_text {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    #mit_bio {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    #major_bio {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+    }
+
+    #email_bio {
+        font-size: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    #phone_bio {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+    }
+
+    #social_links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    .fa {
+        margin: 1.4rem 0.6rem;
+        font-size: 25px!important;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Welcome */
+
+    #welcome_title {
+        font-family: futuralight, times;
+        margin-left: 4%;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+
+    #welcome_content {
+        font-family: futuralight, times;
+        margin: 0rem 4%;
+        padding: 1rem 0 3.4rem;
+        font-size: 1.2rem;
+    }
 }
 
-#three_bars {
-    color: white;
-    cursor: pointer;
-    font-size: 2.6rem;
-    position: absolute;
-    top: 1.9rem;
-    right: 1rem;
-    transform: translate(0%, -50%);
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+
+    /* Bio */
+
+    #circle_image {
+        float: left;
+        width: 7rem;
+        margin: 2.1rem 1.4rem;
+        margin-right: 0.4rem;
+    }
+
+    .bio_text {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1.4rem;
+    }
+
+    #mit_bio {
+        font-size: 0.8rem;
+        padding-top: 1rem;
+    }
+
+    #major_bio {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
+
+    #email_bio {
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+    }
+
+    #phone_bio {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
+
+    #social_links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1.4rem;
+    }
+
+    .fa {
+        margin: 1.4rem 0.6rem;
+        font-size: 25px!important;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Welcome */
+
+    #welcome_title {
+        font-family: futuralight, times;
+        margin-left: 4%;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+
+    #welcome_content {
+        font-family: futuralight, times;
+        margin: 0rem 4%;
+        padding: 1rem 0 3.4rem;
+        font-size: 1.2rem;
+    }
 }
 
-#cross {
-    color: white;
-    cursor: pointer;
-    font-size: 5rem;
-    position: absolute;
-    right: 8%;
-    top: 2%;
-       
-}
+@media only screen and (max-width: 360px) {
 
-#mobile_overlay {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #576ad2;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
+    /* Bio */
 
-#mobile_links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.9rem;
-    width: 80%;
-    text-align: center;
-    font-family: futuralight, times;
-    white-space: nowrap;
-}
+    #circle_image {
+        float: left;
+        width: 7rem;
+        margin: 2.6rem 1.4rem;
+        margin-right: 0.4rem;
+    }
 
-#mobile_home {
-    display: block;
-    text-decoration: none;
-    margin: 0.2rem;
-}
+    .bio_text {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1.4rem;
+    }
 
-#mobile_about {
-    display: block;
-    margin: 0.2rem;
-}
+    #mit_bio {
+        font-size: 0.8rem;
+        padding-top: 1rem;
+    }
 
-#mobile_notes_for_rom {
-    display: block;
-    margin: 0.2rem;
-}
+    #major_bio {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
 
-#mobile_tor_blog {
-    display: block;
-    margin: 0.2rem;
-}
+    #email_bio {
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+    }
 
-header a {
-    text-decoration: none;
-    color: #FFFFFF;
-} */
+    #phone_bio {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
+
+    #social_links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1.4rem;
+    }
+
+    .fa {
+        margin: 1.4rem 0.6rem;
+        font-size: 25px!important;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Welcome */
+
+    #welcome_title {
+        font-family: futuralight, times;
+        margin-left: 4%;
+        padding-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    #welcome_content {
+        font-family: futuralight, times;
+        margin: 0rem 4%;
+        padding: 1rem 0 3.4rem;
+        font-size: 1.1rem;
+    }
+}

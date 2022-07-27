@@ -2,3 +2,4 @@ The Known Problems (that I probably won't fix)
 
 1) If you are using a really tall monitor, you can see beyond the header...
 2) Circle image and bio text on image page in mobile version (when side by side) are not done correctly... Using media tags for control instead.
+3) Anything to do with email (specifically, emailing when note/post is created). Likely problem with port 25 due to ISP, but unsure.
